@@ -64,6 +64,7 @@ ul {
 
 .intro-section {
   background-image: url(img/header_image.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,21 +125,76 @@ ul {
   margin-right: 1rem;
 }
 
-.free-section {
+.prices-section {
   background-color: #00aaff;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em;
   margin-top: 2.2rem;
 }
 
-.free-section h2 {
-  font-size: 3rem;
-  font-family: Georgia;
-  text-transform: uppercase;
-  margin-bottom: 0.75em;
+.price-cards {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.price-card {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.3em;
+}
+
+.price-card:first-child,
+.price-card:last-child {
+  margin: 1rem 0;
+  background-color: hsl(200, 40%, 70%);
+}
+
+.price-card:first-child {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.price-card:last-child {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.price-header h3 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price-value::after {
+  content: "/mo";
+  font-size: 0.75rem;
+  margin-left: 0.1rem;
+  color: #777;
+}
+
+.price-feature {
+  margin-bottom: 0.5rem;
+}
+
+.price-feature:last-child {
+  margin-bottom: 0;
+}
+
+.price-feature.feature-disabled {
+  color: #777;
+  text-decoration: line-through;
 }
 
 .div-text {
