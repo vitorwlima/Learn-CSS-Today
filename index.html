@@ -11,11 +11,11 @@
 
 <body>
 
-  <header>
-    <nav>
-      <div><img src="img/wds_logo.png" alt="Logo"></div>
+  <header class="header">
+    <nav class="nav-menu">
+      <div><img class="logo" src="img/wds_logo.png" alt="Logo"></div>
       <div>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#">Curriculum</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Contact</a></li>
@@ -24,17 +24,16 @@
     </nav>
   </header>
 
-  <section>
-    <img src="img/header_image.jpg" alt="Person coding image">
+  <section class="intro-section">
     <h1>WDS Bootcamp</h1>
     <p>From No Stack To Full Stack</p>
-    <button>Learn More</button>
-    <img src="img/arrow_down.svg" alt="Arrow pointing downwards">
+    <button class="btn intro-btn">Learn More</button>
+    <img class="intro-arrow" src="img/arrow_down.svg" alt="Arrow pointing downwards">
   </section>
 
-  <section>
+  <section class="curric-section">
     <h2>Curriculum</h2>
-    <ul>
+    <ul class="curric-grid">
       <li><img src="img/html_icon.svg" alt="HTML">Start with the basics by learning HTML/CSS to build your first website</li>
       <li><img src="img/node_js_icon.svg" alt="NodeJS">Build interactive web applications with the world's most popular backend</li>
       <li><img src="img/vscode_icon.svg" alt="VSCode">Use the latest technology for editing and creating amazing web applications</li>
@@ -44,28 +43,31 @@
     </ul>
   </section>
 
-  <section>
+  <section class="free-section">
     <h2>Free</h2>
-    <p>That's right. All of this amazing content is available completely for free on YouTube!</p>
+    <div class="div-text">
+      <p>That's right. All of this amazing content is available completely for free on YouTube!</p>
+    </div>
   </section>
 
-  <section>
+  <section class="contact-section">
     <h2>Contact</h2>
-    <form>
+    <form class="form-contact">
       <label for="name">Name</label>
       <input type="text" name="name" id="name">
       <label for="email">Email</label>
       <input type="email" name="email" id="email">
       <label for="message">Message</label>
       <textarea name="message" id="message"></textarea>
+      <button type="submit" class="btn btn-submit">Send</button>
     </form>
   </section>
 
-  <footer>
-    <nav>
-      <div><img src="img/wds_logo.png" alt="Logo"></div>
+  <footer class="footer">
+    <nav class="nav-footer">
+      <div><img class="logo" src="img/wds_logo.png" alt="Logo"></div>
       <div>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#">Curriculum</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Contact</a></li>
