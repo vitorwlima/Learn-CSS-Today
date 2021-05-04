@@ -247,3 +247,30 @@ ul {
 .footer {
   margin-top: 4rem;
 }
+
+@media (max-width: 700px) {
+  .curric-grid {
+    grid-template-columns: repeat(1, minmax(auto, 450px));
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  .price-cards {
+    flex-wrap: wrap;
+  }
+
+  .price-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .price-card:first-child,
+  .price-card:last-child {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0.3em;
+  }
+
+  .feature-disabled {
+    display: none;
+  }
+}
